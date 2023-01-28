@@ -1,0 +1,7 @@
+{
+  "name": "PDP-Index",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
