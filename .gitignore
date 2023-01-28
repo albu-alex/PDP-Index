@@ -66,3 +66,13 @@ testem.log
 # System files
 .DS_Store
 Thumbs.db
+
+node_modules
+.tmp
+.sass-cache
+platforms
+plugins
+*.swp
+*.swo
+*.log
+*.DS_Store
