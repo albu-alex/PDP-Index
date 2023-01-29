@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { RefresherCustomEvent } from '@ionic/angular';
 
-import { DataService, Message } from '../services/data.service';
+import { DataService, Exercise } from '../services/data.service';
 
 @Component({
   selector: 'app-home',
@@ -17,8 +17,8 @@ export class HomePage {
     }, 3000);
   }
 
-  getMessages(): Message[] {
-    return this.data.getMessages();
+  getExercisesByYear(year: Number): Exercise[] {
+    return this.data.getExercisesByYear(year);
   }
 
 }

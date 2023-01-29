@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Inbox
+      Probleme din subiectele de anii trecuti, rezolvate de Chat GPT-3
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -14,12 +14,17 @@
   <ion-header collapse="condense">
     <ion-toolbar>
       <ion-title size="large">
-        Inbox
+        Probleme din subiectele de anii trecuti, rezolvate de Chat GPT-3
       </ion-title>
     </ion-toolbar>
   </ion-header>
   
   <ion-list>
-    <app-message *ngFor="let message of getMessages()" [message]="message"></app-message>
+    <ion-list-header>
+      <ion-label>
+        <h2>2017</h2>
+      </ion-label>
+    </ion-list-header>
+    <app-message *ngFor="let exercise of getExercisesByYear(2017)" [exercise]="exercise"></app-message>
   </ion-list>
 </ion-content>
