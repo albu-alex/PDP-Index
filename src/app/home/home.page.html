@@ -27,4 +27,13 @@
     </ion-list-header>
     <app-message *ngFor="let exercise of getExercisesByYear(2017)" [exercise]="exercise"></app-message>
   </ion-list>
+
+  <ion-list>
+    <ion-list-header>
+      <ion-label>
+        <h2>2018</h2>
+      </ion-label>
+    </ion-list-header>
+    <app-message *ngFor="let exercise of getExercisesByYear(2018)" [exercise]="exercise"></app-message>
+  </ion-list>
 </ion-content>
