@@ -1,4 +1,4 @@
-<ion-item *ngIf="exercise" [routerLink]="'/exercise/' + exercise.id" [detail]="false">
+<ion-item *ngIf="exercise" [routerLink]="'exercise/' + exercise.id" [detail]="false">
   <div slot="start" [class]="!exercise.read ? 'dot dot-unread' : 'dot'"></div>
   <ion-label class="ion-text-wrap">
     <h2>
